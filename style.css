@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.weight-container {
+  background-color: #999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+  border-radius: 2rem;
+}
+
+.label-text {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.input-box {
+  height: 5rem;
+  width: 100%;
+  font-style: inherit;
+  text-align: center;
+  margin: 2rem;
+  border-radius: 5rem;
+}
+
+.BMI-box {
+  height: 5rem;
+  background-color: #fff;
+  width: 100%;
+  font-style: inherit;
+  text-align: center;
+  margin: 2rem;
+  border-radius: 5rem;
+}
+
+/* Containers */
+
+.containers {
+  display: flex;
+  justify-content: center;
+  width: 70rem;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.nutritient {
+  display: flex;
+  flex-direction: column;
+  flex: 0.5;
+  margin: 2rem;
+  text-align: center;
+  flex: 0.5;
+  height: 40rem;
+  border-radius: 5rem;
+  cursor: pointer;
+  border: 1px solid #333;
+  box-shadow: 1px 1px 1px 1px #555;
+  position: relative;
+  overflow: hidden;
+}
+
+.nutri-heading {
+  font-size: 5rem;
+  font-weight: bold;
+  opacity: 0;
+}
+
+.color-protein {
+  color: #3658ff;
+}
+.color-carbs {
+  color: #21c400;
+}
+.color-healthy-fats {
+  color: #ff575a;
+}
+
+.nurition-intake_label {
+  font-size: 2rem;
+  color: #c0ce00;
+  opacity: 0;
+}
+
+.nutrition-explain {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #eee;
+  padding: 0 1rem;
+  opacity: 0;
+}
+
+.display-intake {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 2rem;
+  font-size: 2rem;
+  background-color: #aaa;
+  margin: 0 auto;
+  border-radius: 2rem;
+  min-width: 20rem;
+  height: 5rem;
+  opacity: 0;
+}
+
+/* Images  */
+.protein {
+  background: linear-gradient(rgba(33, 33, 33, 0.8), rgba(0, 0, 0, 0.1)),
+    url("./imgs/protein.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* background-color: #aaaaaa70; */
+  background-size: cover;
+  border-radius: 2rem;
+  height: 100%;
+}
+
+.carbs {
+  background: linear-gradient(rgba(33, 33, 33, 0.8), rgba(0, 0, 0, 0.1)),
+    url("./imgs/carbs.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.healthy-fats {
+  background: linear-gradient(rgba(33, 33, 33, 0.8), rgba(0, 0, 0, 0.1)),
+    url("./imgs/fats.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.nutritient.active {
+  flex: 5;
+}
+.nutritient.active .nutri-heading {
+  opacity: 1;
+}
+
+.nutritient.active .nurition-intake_label {
+  opacity: 1;
+}
+
+.nutritient.active .display-intake {
+  opacity: 1;
+}
+
+.nutritient.active .nutrition-explain {
+  opacity: 1;
+}
